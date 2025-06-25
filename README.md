@@ -20,9 +20,9 @@ const gfAES = new GF256(); // defaults to AES polynomial and generator
 const gfRS = new GF256(Polynomials.REED_SOLOMON, Generators.REED_SOLOMON);
 ```
 
-# Samples
+# Compatible Libraries
 
-- Shamir Secret Sharing: [Zytekaron/shamir-js](https://github.com/Zytekaron/shamir-js)
+- **Go:** [Zytekaron/galois-go](https://github.com/Zytekaron/galois-go)
 
 # License
 
