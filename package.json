@@ -1,0 +1,41 @@
+{
+    "name": "@zytekaron/galois",
+    "publishConfig": {
+        "access": "public"
+    },
+    "version": "0.0.2-beta.4",
+    "description": "A general-purpose Galois field implementation.",
+    "author": "Michael Thornes",
+    "license": "MIT",
+    "keywords": [
+        "galois",
+        "finite",
+        "field"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zytekaron/galois-js"
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "bun run build.ts",
+        "prepublishOnly": "bun run build"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/node": "latest",
+        "typescript": "^5",
+        "bun-plugin-dts": "^0.3.0"
+    }
+}
